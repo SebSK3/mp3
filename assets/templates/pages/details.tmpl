@@ -1,0 +1,16 @@
+{{define "page:title"}}{{end}}
+
+{{define "page:main"}}
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+<form action="/download" method="POST" target="dummyframe" id="download-form">
+    <div>
+        <input type="text" placeholder="Url" name="Url" value="{{.Form.Url}}">
+        <input type="checkbox" name="Mix">
+        <input type="button" value="Advanced" onclick="toggleAdvanced()">
+        <span id="advanced"></span>
+    </div>
+	<button>Submit</button>
+</form>
+<pre><div id="progress" style="font-family: monospace; white-space: pre;"></div></pre>
+{{end}}

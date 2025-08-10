@@ -1,0 +1,19 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>mp3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{block "page:meta" .}}{{end}}
+        <link rel='stylesheet' href='/static/css/main.css?version={{.Version}}'>
+    </head>
+    <body>
+        <main>
+            {{template "page:main" .}}
+        </main>
+        {{template "partial:footer" .}}
+        <script src="/static/js/main.js"></script> 
+    </body>
+</html>
+{{end}}

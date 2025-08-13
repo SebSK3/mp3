@@ -112,7 +112,7 @@ func extractDataFromFullname(app *application, song *internal.Song) {
 		}
 	}
 	if song.Album == "" {
-		song.Album = "Single"
+		song.Album = "Singles"
 	}
 	app.logger.Debug("Final data:", "artist", song.Artist, "title", song.Title, "album", song.Album)
 }

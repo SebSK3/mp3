@@ -12,9 +12,7 @@ function toggleAdvanced() {
   let advanced = ' \
     <input type="text" placeholder="Artist" name="Artist"> \
     <input type="text" placeholder="Title" name="Title"> \
-    <input type="text" placeholder="Album" name="Album"> \
-    <input type="text" placeholder="Custom Image URL" name="ImgUrl"> \
-    <input type="text" placeholder="Custom FFmpeg command" name="FfmpegCmd">';
+    <input type="text" placeholder="Album" name="Album">';
   advancedSpan.innerHTML = advanced;
 }
 

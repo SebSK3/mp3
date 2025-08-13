@@ -37,7 +37,6 @@ func (app *application) status(w http.ResponseWriter, r *http.Request) {
 func (app *application) list(w http.ResponseWriter, r *http.Request) {
 	var err error
 
-	// page := r.PathValue("page")
 	data := app.newTemplateData(r)
 	data["Mp3"], err = app.db.GetList(10, 0)
 	if err != nil {
